@@ -1,0 +1,14 @@
+{
+  "name": "views",
+  "version": "1.0.0",
+  "description": "for hbs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kr",
+  "license": "ISC",
+  "dependencies": {
+    "hbs": "^4.0.3"
+  }
+}
