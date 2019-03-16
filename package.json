@@ -4,7 +4,8 @@
   "description": "packages info",
   "main": "express.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1" ,
+    "start" : "node express-udemy.js"
   },
   "author": "kr",
   "license": "ISC",

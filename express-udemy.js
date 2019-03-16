@@ -6,6 +6,7 @@ const fs=require('fs');
 var hbs=require('express-hbs');
 const _ =require('lodash');
 var app=express();
+const port=process.env.PORT || 4000 ;
 app.engine('hbs', hbs.express4({
   partialsDir: __dirname + '/views/partials'
 }));
@@ -65,7 +66,7 @@ app.get('/signup/:id/:pwd',(req,res)=>
 })
 
 
-app.listen(4000,()=>
+app.listen(port,()=>
 {
-  console.log('connected to server');
+  console.log('connected to server '+ port);
 })
