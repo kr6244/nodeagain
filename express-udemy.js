@@ -35,18 +35,24 @@ var valid=notes.filter((note)=>
 {
   if(note.id==req.params.id && note.pwd==req.params.pwd)
   {
-    res.render('welcome.hbs',{
-      id:req.params.id,
-      currtime: new Date().getFullYear()
-    });
+   return note;
   }
-  else {
-    res.render('sorry.hbs',{
-      id:req.params.id,
-      currtime: new Date().getFullYear()
-    });
-  }
+
 });
+if(valid.length>0)
+{
+  res.render('welcome.hbs',{
+    id:req.params.id,
+    currtime: new Date().getFullYear()
+  });
+}
+else {
+  res.render('sorry.hbs',{
+    id:req.params.id,
+    currtime: new Date().getFullYear()
+  });
+
+}
 
 
 });
