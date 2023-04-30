@@ -9,6 +9,6 @@
   "author": "kr",
   "license": "ISC",
   "dependencies": {
-    "hbs": "^4.0.3"
+    "hbs": "^4.2.0"
   }
 }
